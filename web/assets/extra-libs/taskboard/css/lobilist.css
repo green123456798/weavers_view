@@ -236,6 +236,7 @@
 }
 
 .lobilists .lobilist.lobilist-primary .lobilist-actions .btn {
+    
     color: #FFF;
 }
 
@@ -309,7 +310,7 @@
 
 .lobilists .lobilist-actions .dropdown-menu {
     height: 70px;
-    width: 100px;
+    width: 30px;
     box-sizing: content-box;
     min-width: 0;
     padding: 0;
