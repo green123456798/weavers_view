@@ -43,190 +43,192 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-            <header class="topbar" data-navbarbg="skin6">
-                <nav class="navbar top-navbar navbar-expand-md">
-                    <div class="navbar-header" data-logobg="skin6">
-                        <!-- This is for the sidebar toggle which is visible on mobile only -->
-                        <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-                                class="ti-menu ti-close"></i></a>
-                        <!-- ============================================================== -->
-                        <!-- Logo -->
-                        <!-- ============================================================== -->
-                        <div class="navbar-brand">
-                            <a href="index.html"> 
-                                <!-- 반응형 될때 로고 바뀌게 하기 -->
-                                <b class="logo-icon">
-                                    <!-- Dark Logo icon -->
-                                    <img src="assets/images/weaveglow_logo.png" width="210" alt="homepage" class="dark-logo" />
-                                    <!-- Light Logo icon -->
-                                    <img src="assets/images/weaveglow_logo.png" alt="homepage" class="light-logo" />
-                                </b>
-                                <!--End Logo icon -->
-                                <!-- Logo text -->
-                                <span class="logo-text">
-                                    <!-- dark Logo text -->
-                                    <!-- <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
-                                    <!-- Light Logo text -->
-                                    <!-- <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
-                                </span>
-                            </a>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- End Logo -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Toggle which is visible on mobile only -->
-                        <!-- ============================================================== -->
-                        <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
-                            data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
-                                class="ti-more"></i></a>
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="index.html">
+                            <b class="logo-icon">
+                                <!-- Dark Logo icon -->
+                                <img src="assets/images/logo-w.jpg" width="50" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo icon -->
+
+                                <img src="assets/images/logo-w.jpg" alt="homepage" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <!-- dark Logo text -->
+                                <img src="assets/images/weaveglow_logo.png" width="150" alt="homepage"
+                                    class="dark-logo" />
+                                <!-- Light Logo text -->
+                                <img src="assets/images/weaveglow_logo.png" class="light-logo" alt="homepage" />
+                            </span>
+                        </a>
                     </div>
                     <!-- ============================================================== -->
                     <!-- End Logo -->
                     <!-- ============================================================== -->
-                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                        <!-- ============================================================== -->
-                        <!-- toggle and nav items -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
-                            <!-- Notification -->
-                            <li class="nav-item dropdown">
-                                <!-- <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                            class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                        <!-- Notification -->
+                        <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
                                     id="bell" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <span><i data-feather="bell" class="svg-icon"></i></span>
                                     <span class="badge badge-primary notify-no rounded-circle">5</span>
                                 </a> -->
-                                <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
-                                    <ul class="list-style-none">
-                                        <li>
-                                            <div class="message-center notifications position-relative">
-                                                <!-- Message -->
-                                                <a href="javascript:void(0)"
-                                                    class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                    <div class="btn btn-danger rounded-circle btn-circle"><i
-                                                            data-feather="airplay" class="text-white"></i></div>
-                                                    <div class="w-75 d-inline-block v-middle pl-2">
-                                                        <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
-                                                        <span class="font-12 text-nowrap d-block text-muted">Just see
-                                                            the my new
-                                                            admin!</span>
-                                                        <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
-                                                    </div>
-                                                </a>
-                                                <!-- Message -->
-                                                <a href="javascript:void(0)"
-                                                    class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                    <span class="btn btn-success text-white rounded-circle btn-circle"><i
-                                                            data-feather="calendar" class="text-white"></i></span>
-                                                    <div class="w-75 d-inline-block v-middle pl-2">
-                                                        <h6 class="message-title mb-0 mt-1">Event today</h6>
-                                                        <span
-                                                            class="font-12 text-nowrap d-block text-muted text-truncate">Just
-                                                            a reminder that you have event</span>
-                                                        <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
-                                                    </div>
-                                                </a>
-                                                <!-- Message -->
-                                                <a href="javascript:void(0)"
-                                                    class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                    <span class="btn btn-info rounded-circle btn-circle"><i
-                                                            data-feather="settings" class="text-white"></i></span>
-                                                    <div class="w-75 d-inline-block v-middle pl-2">
-                                                        <h6 class="message-title mb-0 mt-1">Settings</h6>
-                                                        <span
-                                                            class="font-12 text-nowrap d-block text-muted text-truncate">You
-                                                            can customize this template
-                                                            as you want</span>
-                                                        <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
-                                                    </div>
-                                                </a>
-                                                <!-- Message -->
-                                                <a href="javascript:void(0)"
-                                                    class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                    <span class="btn btn-primary rounded-circle btn-circle"><i
-                                                            data-feather="box" class="text-white"></i></span>
-                                                    <div class="w-75 d-inline-block v-middle pl-2">
-                                                        <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
-                                                            class="font-12 text-nowrap d-block text-muted">Just
-                                                            see the my admin!</span>
-                                                        <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
-                                                <strong>Check all notifications</strong>
-                                                <i class="fa fa-angle-right"></i>
+                            <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="message-center notifications position-relative">
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <div class="btn btn-danger rounded-circle btn-circle"><i
+                                                        data-feather="airplay" class="text-white"></i></div>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
+                                                    <span class="font-12 text-nowrap d-block text-muted">Just see
+                                                        the my new
+                                                        admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
+                                                </div>
                                             </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <!-- End Notification -->
-                            <!-- ============================================================== -->
-                            <!-- create new -->
-                            <!-- ============================================================== -->
-                            <li class="nav-item dropdown">
-                                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-success text-white rounded-circle btn-circle"><i
+                                                        data-feather="calendar" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Event today</h6>
+                                                    <span
+                                                        class="font-12 text-nowrap d-block text-muted text-truncate">Just
+                                                        a reminder that you have event</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-info rounded-circle btn-circle"><i
+                                                        data-feather="settings" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Settings</h6>
+                                                    <span
+                                                        class="font-12 text-nowrap d-block text-muted text-truncate">You
+                                                        can customize this template
+                                                        as you want</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-primary rounded-circle btn-circle"><i
+                                                        data-feather="box" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
+                                                        class="font-12 text-nowrap d-block text-muted">Just
+                                                        see the my admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
+                                            <strong>Check all notifications</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- End Notification -->
+                        <!-- ============================================================== -->
+                        <!-- create new -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i data-feather="settings" class="svg-icon"></i>
                                 </a> -->
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item d-none d-md-block">
-                                <a class="nav-link" href="javascript:void(0)">
-                                    <div class="customize-input">
-                                        <!-- <select
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <div class="customize-input">
+                                    <!-- <select
                                             class="custom-select form-control bg-white custom-radius custom-shadow border-0">
                                             <option selected>EN</option>
                                             <option value="1">AB</option>
                                             <option value="2">AK</option>
                                             <option value="3">BE</option>
                                         </select> -->
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
                         <!-- ============================================================== -->
-                        <!-- Right side toggle and nav items -->
+                        <!-- Search -->
                         <!-- ============================================================== -->
-                        <ul class="navbar-nav float-right">
-                            <!-- ============================================================== -->
-                            <!-- Search -->
-                            <!-- ============================================================== -->
-                            <li class="nav-item d-none d-md-block">
-                                <a class="nav-link" href="javascript:void(0)">
-                                    <!-- <form>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <!-- <form>
                                         <div class="customize-input">
                                             <input class="form-control custom-shadow custom-radius border-0 bg-white"
                                                 type="search" placeholder="Search" aria-label="Search">about:blank#blocked
                                             <i class="form-control-icon" data-feather="search"></i>
                                         </div>
                                     </form> -->
-                                </a>
-                            </li>
-                            <!-- ============================================================== -->
-                            <!-- User profile and search -->
-                            <!-- ============================================================== -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    <img src="assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
-                                        width="40">
-                                    <span class="ml-2 d-none d-lg-inline-block" ><span style="color:black;">Web</span> <span
-                                            class="text-dark">weavers</span> <i data-feather="chevron-down"
-                                            class="svg-icon" style="color: black;"></i></span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-sm-right ">
-                                    <!-- <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
+                                    width="40">
+                                <span class="ml-2 d-none d-lg-inline-block"><span style="color:black;">Web</span> <span
+                                        class="text-dark">weavers</span> <i data-feather="chevron-down" class="svg-icon"
+                                        style="color: black;"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-sm-right ">
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
                                             class="svg-icon mr-2 ml-1"></i>
                                         My Profile</a>
                                     <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
@@ -240,20 +242,21 @@
                                             class="svg-icon mr-2 ml-1"></i>
                                         Account Setting</a>
                                     <div class="dropdown-divider"></div> -->
-                                    <!-- <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
                                             class="svg-icon mr-2 ml-1"></i>
                                         Logout</a> -->
-                                    <!-- <div class="dropdown-divider"></div> -->
-                                    <div class="p-2"> <a href="javascript:void(0)" class="btn btn-sm btn-info"  style="width: 100%;"> Logout </a> </div>
-                                </div>
-                            </li>
-                            <!-- ============================================================== -->
-                            <!-- User profile and search -->
-                            <!-- ============================================================== -->
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <div class="p-2"> <a href="javascript:void(0)" class="btn btn-sm btn-info"
+                                        style="width: 100%;"> Logout </a> </div>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <!-- ============================================================== -->
         <!-- End Topbar header -->
         <!-- ============================================================== -->
@@ -507,7 +510,8 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -597,7 +601,7 @@
                 <!-- Start Sales Charts Section -->
                 <!-- *************************************************************** -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
+                    <!-- <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Total Sales</h4>
@@ -621,8 +625,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
+                    </div> -->
+                    <div class="col-lg-6 col-md-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Net Income</h4>
@@ -633,7 +637,117 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Line Chart</h4>
+                                <div id="morris-line-chart"
+                                    style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg
+                                        height="342" version="1.1" width="589" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        style="overflow: hidden; position: relative; top: -0.599976px;">
+                                        <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with
+                                            Raphaël 2.2.0</desc>
+                                        <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text
+                                            x="48.17499923706055" y="301" text-anchor="end" font-family="sans-serif"
+                                            font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal">
+                                            <tspan dy="4.399981498718262"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                                        </text>
+                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,301H563.6"
+                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </path><text x="48.17499923706055" y="232" text-anchor="end"
+                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal">
+                                            <tspan dy="4.399996757507324"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5,000</tspan>
+                                        </text>
+                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,232H563.6"
+                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </path><text x="48.17499923706055" y="163" text-anchor="end"
+                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal">
+                                            <tspan dy="4.399996757507324"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10,000</tspan>
+                                        </text>
+                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,163H563.6"
+                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </path><text x="48.17499923706055" y="94" text-anchor="end"
+                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal">
+                                            <tspan dy="4.399996757507324"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan>
+                                        </text>
+                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,94H563.6"
+                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </path><text x="48.17499923706055" y="25" text-anchor="end"
+                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal">
+                                            <tspan dy="4.399999618530273"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20,000</tspan>
+                                        </text>
+                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,25H563.6"
+                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </path><text x="471.3257896534583" y="313.5" text-anchor="middle"
+                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal" transform="matrix(1,0,0,1,0,8)">
+                                            <tspan dy="4.399981498718262"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan>
+                                        </text><text x="247.6677698730988" y="313.5" text-anchor="middle"
+                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                            font-weight="normal" transform="matrix(1,0,0,1,0,8)">
+                                            <tspan dy="4.399981498718262"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan>
+                                        </text>
+                                        <path fill="none" stroke="#5f76e8"
+                                            d="M60.67499923706055,264.2092C74.73001140905035,263.82280000000003,102.84003575302995,266.53794999999997,116.89504792501975,262.6636C130.95006009700955,258.78925,159.06008444098916,234.9297475409836,173.11509661297896,233.2144C187.0173369135341,231.51769754098362,214.82181751464435,252.28945,228.7240578151995,249.0154C242.62629811575465,245.74135,270.4307787168649,210.2867368852459,284.33301901742004,207.022C298.38803118940984,203.7213868852459,326.49805553338945,219.32125000000002,340.55306770537925,222.75400000000002C354.60807987736905,226.18675000000002,382.71810422134865,250.79280983606554,396.77311639333846,234.48399999999998C410.6753566938936,218.35245983606555,438.47983729500385,103.16908977900553,452.382077595559,92.99260000000001C466.13154602467944,82.92793977900554,493.6304828829204,142.1895620879121,507.3799513120408,153.5194C521.4349634840306,165.10101208791207,549.5449878280102,176.85864999999998,563.6,184.6384"
+                                            stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </path>
+                                        <circle cx="60.67499923706055" cy="264.2092" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="116.89504792501975" cy="262.6636" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="173.11509661297896" cy="233.2144" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="228.7240578151995" cy="249.0154" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="284.33301901742004" cy="207.022" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="340.55306770537925" cy="222.75400000000002" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="396.77311639333846" cy="234.48399999999998" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="452.382077595559" cy="92.99260000000001" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="507.3799513120408" cy="153.5194" r="4" fill="#5f76e8"
+                                            stroke="#ffffff" stroke-width="1"
+                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                        <circle cx="563.6" cy="184.6384" r="4" fill="#5f76e8" stroke="#ffffff"
+                                            stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        </circle>
+                                    </svg>
+                                    <div class="morris-hover morris-default-style" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-4">Earning by Location</h4>
@@ -698,7 +812,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- *************************************************************** -->
                 <!-- End Sales Charts Section -->
@@ -781,7 +895,8 @@
                                             <p class="font-14 mb-2 text-muted">One Pending order from Ryne <br> Doe</p>
                                             <span class="font-weight-light font-14 mb-1 d-block text-muted">2 Hours
                                                 Ago</span>
-                                            <a href="javascript:void(0)" class="font-14 border-bottom pb-1 border-info">Load More</a>
+                                            <a href="javascript:void(0)"
+                                                class="font-14 border-bottom pb-1 border-info">Load More</a>
                                         </div>
                                     </div>
                                 </div>
