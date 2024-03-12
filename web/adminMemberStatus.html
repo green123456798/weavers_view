@@ -63,6 +63,30 @@
         }
     </style>
 
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* 화면 너비가 768px 이하일 때 스타일 적용 */
+            table {
+                font-size: 14px;
+                /* 작은 화면에서 글꼴 크기 조정 */
+            }
+        }
+    </style>
+
+
 
 </head>
 
@@ -304,6 +328,7 @@
                                                                     placeholder="ex) weaveGlow">
                                                             </div>
                                                         </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -320,46 +345,47 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="text" class="input" placeholder="검색 결과" disabled>
-                                    <br>
-                                    <div class="table-responsive">
-                                        <!-- <table class="table"> -->
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <th scope="col">아이디</th>
-                                                <th scope="col">이름</th>
-                                                <th scope="col">등급</th>
-                                                <th scope="col">생일</th>
-                                                <th scope="col">가입일</th>
-                                                <th scope="col">이메일수신동의</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row" class="membertable">1</th>
-                                                <td><a href="/adminMemberUpdate">Mark</a></td>
-                                                <td><a href="/adminMemberUpdate">Otto</a></td>
-                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="membertable">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                                <td>@fat</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="membertable">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>@twitter</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                        </tbody>
+                                    <div class='cur-row' style="color: #000000;">
+                                        <div>검색결과</div>
+                                        <br>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>아이디</th>
+                                                    <th>이름</th>
+                                                    <th>등급</th>
+                                                    <th>생일</th>
+                                                    <th>가입일</th>
+                                                    <th>이메일수신동의</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="membertable">1</th>
+                                                    <td><a href="/adminMemberUpdate">Mark</a></td>
+                                                    <td><a href="/adminMemberUpdate">Otto</a></td>
+                                                    <td><a href="/adminMemberUpdate">@mdo</a></td>
+                                                    <td><a href="/adminMemberUpdate">@mdo</a></td>
+                                                    <td><a href="/adminMemberUpdate">@mdo</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="membertable">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                    <td>@fat</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="membertable">3</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td>@twitter</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                         <!-- </table> -->
                                     </div>
                                 </div>
