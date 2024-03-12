@@ -31,6 +31,28 @@
     </style>
 
     <style>
+        .custom {
+            appearance: none;
+            /* 웹킷 브라우저에서 기본 스타일 제거 */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent url('path_to_arrow_icon.png') no-repeat right center;
+            /* 드롭다운 아이콘 설정 */
+            padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+            /* 내부 여백 설정 */
+            border: 1px solid #ced4da;
+            /* 테두리 스타일 설정 */
+            border-radius: 0.25rem;
+            /* 테두리 반경 설정 */
+            line-height: 1.5;
+            /* 줄 높이 설정 */
+            background: url(../../assets/images/custom-select.png) right 1.1rem center no-repeat;
+        }
+    </style>
+
+
+
+    <style>
         .table-wrapper {
             overflow-x: auto;
             /* 가로 스크롤을 자동으로 추가합니다. */
@@ -365,9 +387,13 @@
                                                     <tr>
                                                         <td>1</td>
                                                         <td>John Doe</td>
-                                                        <td class="scrollable-column">ddddddddddddddd</td>
+                                                        <td>ddddddddddddddd</td>
                                                         <td>ddddd</td>
-                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
                                                         <td>1</td>
                                                     </tr>
                                                     <tr>
@@ -375,7 +401,13 @@
                                                         <td>Jane Smith</td>
                                                         <td>25</td>
                                                         <td>ddddd</td>
-                                                        <td>ddddd</td>
+                                                        <td>
+                                                            <select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select>
+                                                        </td>
                                                         <td>1</td>
                                                     </tr>
                                                     <tr>
@@ -383,7 +415,11 @@
                                                         <td>Michael Johnson</td>
                                                         <td>35</td>
                                                         <td>ddddd</td>
-                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
                                                         <td>1</td>
                                                     </tr>
 
