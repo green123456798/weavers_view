@@ -379,6 +379,7 @@
 }
 
 .lobilists .lobilist-actions .btn {
+    margin: 0 auto;
     background-color: transparent;
     border-color: transparent;
     width: 40px;

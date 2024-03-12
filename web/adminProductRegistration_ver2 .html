@@ -291,9 +291,21 @@
                                 </div>
                               </div>
                               <div class="col-md-9">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="ex) 스킨, 로션">
-                                </div>
+                                <select class="custom-select mr-sm-2" id="select-category"
+                                  style="color: black; width: auto;">
+                                  <option value="1">스킨케어</option>
+                                  <option value="2">클렌징</option>
+                                  <option value="3">팩</option>
+                                  <option value="4">선케어</option>
+                                </select>
+
+                                <select class="custom-select mr-sm-2" id="select-subcategory"
+                                  style="color: black; width: auto;">
+                                  <option value="1">나중에</option>
+                                  <option value="2">비동기로</option>
+                                  <option value="3">값 가져와서 넣기</option>
+                                  <option value="4">카테고리에 맞는 세부카테고리나오게</option>
+                                </select>
                               </div>
                             </div>
 
@@ -322,6 +334,7 @@
                                 </div>
                               </div>
                             </div>
+
                             <div class="row">
                               <div class="col-md-3">
                                 <div class="form-group">
@@ -330,7 +343,7 @@
                                 </div>
                               </div>
                               <div class="col-md-9">
-                                <select class="custom-select mr-sm-2" id="registrarion-salestatus" style="color: black">
+                                <select class="custom-select mr-sm-2" id="registration-salestatus" style="color: black">
                                   <option value="1">판매중</option>
                                   <option value="2">판매완료</option>
                                 </select>
@@ -360,7 +373,7 @@
                           <div class="float-right" style="height: 50px;">
                             <br>
                             <button type="button" class="btn btn-primary"><i class="fas fa-check"></i>
-                              전송</button>
+                              완료</button>
                             <button type="button" class="btn btn-primary"><i class="fas fa-check"></i>
                               취소</button>
                           </div>

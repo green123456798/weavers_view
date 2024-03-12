@@ -269,6 +269,27 @@
                                             <div class="card-body">
                                                 <div class="table-responsive">
                                                     <form>
+
+                                                        <div class="row">
+                                                            <label class="col-lg-2"
+                                                                style="margin-top: 7px; margin-bottom: 4px;">아이디</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="row">
+                                                                    <div class="col-lg-10">
+                                                                        <input type="text"
+                                                                            class="form-control col-md-12"
+                                                                            id="registMid" name="memberId"
+                                                                            placeholder="아이디 입력"
+                                                                            onfocus="this.placeholder = ''"
+                                                                            onblur="this.placeholder = '아이디 입력'"
+                                                                            style="display: inline-block;"
+                                                                            value="${sessionMid}" disabled>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
                                                         <div class="row">
                                                             <div class="col-md-2">
                                                                 <div class="form-group">
@@ -279,11 +300,11 @@
                                                             <div class="col-md-8">
                                                                 <select class="custom-select mr-sm-2" id="member-grade"
                                                                     style="color: black">
+                                                                    <option value="1">탈퇴</option>
+                                                                    <option value="2">관리자</option>
                                                                     <option value="3">브론즈</option>
                                                                     <option value="4">실버</option>
                                                                     <option value="5">골드</option>
-                                                                    <option value="1">탈퇴</option>
-                                                                    <option value="2">관리자</option>
                                                                 </select>
                                                             </div>
                                                         </div>
