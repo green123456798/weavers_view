@@ -23,6 +23,12 @@
             /* 원하는 배경색으로 변경 */
             border: 3px solid #ffffff;
         }
+
+        form .cur-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
     </style>
 
     <style>
@@ -272,13 +278,8 @@
                                             <div class="card-body">
                                                 <div class="table-responsive">
                                                     <form>
-                                                        <div class="row">
-                                                            <div class="col-md-2">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="input" placeholder="회원 등급"
-                                                                        disabled>
-                                                                </div>
-                                                            </div>
+                                                        <div class='cur-row' style="color:#000000">
+                                                            <div>회원등급</div>
                                                             <div class="col-md-8">
                                                                 <select class="custom-select mr-sm-2" id="member-grade"
                                                                     style="color: black">
@@ -290,114 +291,96 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-
-                                                        <div class="row">
-                                                            <div class="col-md-2">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="input" placeholder="회원이름"
-                                                                        disabled>
-                                                                </div>
-
-                                                            </div>
+                                                        <br>
+                                                        <div class='cur-row' style="color: #000000;">
+                                                            <div>회원이름</div>
                                                             <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control"
-                                                                        placeholder="ex) 홍길동">
-
-                                                                </div>
-
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="ex) 홍길동">
                                                             </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="input" placeholder="회원아이디"
-                                                                        disabled>
-                                                                </div>
-
-                                                            </div>
+                                                            <div>회원아이디</div>
                                                             <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control"
-                                                                        placeholder="ex) weaveGlow">
-
-                                                                </div>
-
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="ex) weaveGlow">
                                                             </div>
                                                         </div>
-
-                                                        <div class="row">
-
-                                                        </div>
-
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-md-6 text-center">
-                                                                <button type="button"
-                                                                    class="btn btn-primary" "><i class=" fas
-                                                                    fa-check"></i>
-                                                                    검색</button>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <input type="text" class="input" placeholder="검색 결과" disabled>
-                                                <br>
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead class="thead-light">
-                                                            <tr>
-                                                                <th scope="col">아이디</th>
-                                                                <th scope="col">이름</th>
-                                                                <th scope="col">등급</th>
-                                                                <th scope="col">생일</th>
-                                                                <th scope="col">가입일</th>
-                                                                <th scope="col">이메일수신동의</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="row" class="membertable">1</th>
-                                                                <td><a href="/adminMemberUpdate">Mark</a></td>
-                                                                <td><a href="/adminMemberUpdate">Otto</a></td>
-                                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row" class="membertable">2</th>
-                                                                <td>Jacob</td>
-                                                                <td>Thornton</td>
-                                                                <td>@fat</td>
-                                                                <td>@fat</td>
-                                                                <td>@fat</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row" class="membertable">3</th>
-                                                                <td>Larry</td>
-                                                                <td>the Bird</td>
-                                                                <td>@twitter</td>
-                                                                <td>@twitter</td>
-                                                                <td>@twitter</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+
+                                        </div>
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6 text-center">
+                                                <button type="button" class="btn btn-primary" "><i class=" fas
+                                                    fa-check"></i>
+                                                    검색</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div> <!-- 제일 큰 div-->
+                                    <input type="text" class="input" placeholder="검색 결과" disabled>
+                                    <br>
+                                    <div class="table-responsive">
+                                        <!-- <table class="table"> -->
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th scope="col">아이디</th>
+                                                <th scope="col">이름</th>
+                                                <th scope="col">등급</th>
+                                                <th scope="col">생일</th>
+                                                <th scope="col">가입일</th>
+                                                <th scope="col">이메일수신동의</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="membertable">1</th>
+                                                <td><a href="/adminMemberUpdate">Mark</a></td>
+                                                <td><a href="/adminMemberUpdate">Otto</a></td>
+                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
+                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
+                                                <td><a href="/adminMemberUpdate">@mdo</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="membertable">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>@fat</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="membertable">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                                <td>@twitter</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- </table> -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- 제일 큰 div-->
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <footer class="footer text-center text-muted">
-            Web Wevers <a href="http://koreaitsecurity.net/">WebWevers</a>
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
+    </div>
+    </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <footer class="footer text-center text-muted">
+        Web Wevers <a href="http://koreaitsecurity.net/">WebWevers</a>
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
     </div>
     </div>
     <!-- ============================================================== -->

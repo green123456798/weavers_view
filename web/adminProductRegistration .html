@@ -22,7 +22,6 @@
     }
 
     .ck-editor__editable {
-      /* 테스트 */
       min-height: 300px;
     }
   </style>
@@ -33,6 +32,12 @@
       background-color: #ffffff4d;
       /* 원하는 배경색으로 변경 */
       border: 3px solid #ffffff;
+    }
+
+    form .cur-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
   </style>
 
@@ -259,39 +264,16 @@
                       <div class="card-body">
                         <div class="table-responsive">
                           <form>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="상품코드" disabled>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="값 받아오기" readonly>
-                                </div>
+                            <div class='cur-row' style="color:#000000">
+                              <div>회원등급</div>
+                              <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="ex) 홍길동">
                               </div>
                             </div>
-
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="등록일" disabled>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="값 받아오기" readonly>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="카테고리" disabled>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
+                            <br>
+                            <div class='cur-row' style="color:#000000; display: flex; ">
+                              <div>카테고리</div>
+                              <div style="margin-left: 15px;">
                                 <select class="custom-select mr-sm-2" id="select-category"
                                   style="color: black; width: auto;">
                                   <option value="1">스킨케어</option>
@@ -299,85 +281,66 @@
                                   <option value="3">팩</option>
                                   <option value="4">선케어</option>
                                 </select>
-
-                                <select class="custom-select mr-sm-2" id="select-subcategory"
+                              </div>
+                              <div>
+                                <select class="custom-select mr-sm-2" id="select-category"
                                   style="color: black; width: auto;">
-                                  <option value="1">나중에</option>
-                                  <option value="2">비동기로</option>
-                                  <option value="3">값 가져와서 넣기</option>
-                                  <option value="4">카테고리에 맞는 세부카테고리나오게</option>
+                                  <option value="1">나중에 비동기로</option>
+                                  <option value="2">값 가져와서 넣기</option>
+                                  <option value="3">카테고리에 맞는 </option>
+                                  <option value="4">세부카테고리나오게 </option>
                                 </select>
                               </div>
                             </div>
-
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="상품명" disabled>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="ex) 촉촉한 스킨">
-                                </div>
+                            <br>
+                            <div class='cur-row' style="color:#000000; display: flex;">
+                              <div>상품명</div>
+                              <div class="col-md-5" style="margin-left: 15px;">
+                                <input type="text" class="form-control" placeholder="ex) 촉촉한 스킨">
                               </div>
                             </div>
-
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="판매가" disabled>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="ex) 25,000">
-                                </div>
+                            <br>
+                            <div class='cur-row' style="color:#000000; display: flex;">
+                              <div>판매가</div>
+                              <div class="col-md-5" style="margin-left: 15px;">
+                                <input type="text" class="form-control" placeholder="ex) 25,000">
                               </div>
                             </div>
-
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="판매상태" disabled>
-
-                                </div>
-                              </div>
-                              <div class="col-md-9">
+                            <br>
+                            <div class='cur-row' style="color:#000000; display: flex;">
+                              <div>판매상태</div>
+                              <div class="col-md-5">
                                 <select class="custom-select mr-sm-2" id="registration-salestatus" style="color: black">
                                   <option value="1">판매중</option>
                                   <option value="2">판매완료</option>
                                 </select>
                               </div>
                             </div>
-
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="form-group">
-                                  <input type="text" class="input" placeholder="재고수량" disabled>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="ex) 100">
-                                </div>
+                            <br>
+                            <div class='cur-row' style="color:#000000; display: flex;">
+                              <div>재고수량</div>
+                              <div class="col-md-5">
+                                <input type="text" class="form-control" placeholder="ex) 100">
                               </div>
                             </div>
-                        </div>
-                        <input type="text" class="input" placeholder="상세설명" disabled>
-                        <br>
-                        <div class="table-responsive">
-                          <div id="classic"></div>
-                          </td>
-                          </tr>
-                          <!-- end table-responsive-->
-                          <div class="float-right" style="height: 50px;">
+
                             <br>
-                            <button type="button" class="btn btn-primary"><i class="fas fa-check"></i>
-                              완료</button>
-                            <button type="button" class="btn btn-primary"><i class="fas fa-check"></i>
-                              취소</button>
-                          </div>
+                            <div class='cur-row' style="color:#000000; display: flex;">
+                              <div>상세설명</div>
+                            </div>
+                            <br>
+                            <div class="table-responsive">
+                              <div id="classic"></div>
+                              </td>
+                              </tr>
+                              <!-- end table-responsive-->
+                              <div class="float-right" style="height: 50px;">
+                                <br>
+                                <button type="button" class="btn btn-primary"><i class="fas fa-check"></i>
+                                  완료</button>
+                                <button type="button" class="btn btn-primary"><i class="fas fa-check"></i>
+                                  취소</button>
+                              </div>
                           </form>
                           <script>
                             ClassicEditor
@@ -387,28 +350,31 @@
                               });
                           </script>
                         </div>
-                      </div> <!-- end card-body-->
-                    </div> <!-- end card-->
-                  </div> <!-- end col-->
-                </div>
-              </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- end card-body-->
+              </div> <!-- end card-->
+            </div> <!-- end col-->
           </div>
         </div>
       </div>
     </div>
-    <!-- ============================================================== -->
-    <!-- End Container fluid  -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- footer -->
-    <!-- ============================================================== -->
-    <footer class="footer text-center text-muted">
-      Web Wevers <a href="http://koreaitsecurity.net/">WebWevers</a>
-    </footer>
-    <!-- ============================================================== -->
-    <!-- End footer -->
-    <!-- ============================================================== -->
+  </div>
+  </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Container fluid  -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- footer -->
+  <!-- ============================================================== -->
+  <footer class="footer text-center text-muted">
+    Web Wevers <a href="http://koreaitsecurity.net/">WebWevers</a>
+  </footer>
+  <!-- ============================================================== -->
+  <!-- End footer -->
+  <!-- ============================================================== -->
   </div>
   <!-- ============================================================== -->
   <!-- End Page wrapper  -->
