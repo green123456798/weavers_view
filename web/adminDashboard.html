@@ -15,6 +15,11 @@
     <link href="assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet" />
+    <style>
+        .card-body {
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -285,6 +290,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- *************************************************************** -->
                 <!-- End First Cards -->
@@ -295,132 +301,50 @@
                 <div class="row">
                     <!-- column -->
                     <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">매출현황</h4>
-                                <div>
-                                    <canvas id="bar-chart" height="150"></canvas>
+                        <div class="card h-90">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">매출현황</h4>
+                                    <div>
+                                        <canvas id="bar-chart" height="150"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- column -->
-                    <div class="col-lg-6 col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">기간별 매출현황</h4>
-                                <div id="morris-line-chart"
-                                    style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg
-                                        height="342" version="1.1" width="589" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        style="overflow: hidden; position: relative; top: -0.599976px;">
-                                        <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with
-                                            Raphaël 2.2.0</desc>
-                                        <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text
-                                            x="48.17499923706055" y="301" text-anchor="end" font-family="sans-serif"
-                                            font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal">
-                                            <tspan dy="4.399981498718262"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,301H563.6"
-                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </path><text x="48.17499923706055" y="232" text-anchor="end"
-                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal">
-                                            <tspan dy="4.399996757507324"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5,000</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,232H563.6"
-                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </path><text x="48.17499923706055" y="163" text-anchor="end"
-                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal">
-                                            <tspan dy="4.399996757507324"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10,000</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,163H563.6"
-                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </path><text x="48.17499923706055" y="94" text-anchor="end"
-                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal">
-                                            <tspan dy="4.399996757507324"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,94H563.6"
-                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </path><text x="48.17499923706055" y="25" text-anchor="end"
-                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal">
-                                            <tspan dy="4.399999618530273"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20,000</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#eef0f2" d="M60.67499923706055,25H563.6"
-                                            stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </path><text x="471.3257896534583" y="313.5" text-anchor="middle"
-                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal" transform="matrix(1,0,0,1,0,8)">
-                                            <tspan dy="4.399981498718262"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan>
-                                        </text><text x="247.6677698730988" y="313.5" text-anchor="middle"
-                                            font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
-                                            font-weight="normal" transform="matrix(1,0,0,1,0,8)">
-                                            <tspan dy="4.399981498718262"
-                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#5f76e8"
-                                            d="M60.67499923706055,264.2092C74.73001140905035,263.82280000000003,102.84003575302995,266.53794999999997,116.89504792501975,262.6636C130.95006009700955,258.78925,159.06008444098916,234.9297475409836,173.11509661297896,233.2144C187.0173369135341,231.51769754098362,214.82181751464435,252.28945,228.7240578151995,249.0154C242.62629811575465,245.74135,270.4307787168649,210.2867368852459,284.33301901742004,207.022C298.38803118940984,203.7213868852459,326.49805553338945,219.32125000000002,340.55306770537925,222.75400000000002C354.60807987736905,226.18675000000002,382.71810422134865,250.79280983606554,396.77311639333846,234.48399999999998C410.6753566938936,218.35245983606555,438.47983729500385,103.16908977900553,452.382077595559,92.99260000000001C466.13154602467944,82.92793977900554,493.6304828829204,142.1895620879121,507.3799513120408,153.5194C521.4349634840306,165.10101208791207,549.5449878280102,176.85864999999998,563.6,184.6384"
-                                            stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </path>
-                                        <circle cx="60.67499923706055" cy="264.2092" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                        <circle cx="116.89504792501975" cy="262.6636" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                        <circle cx="173.11509661297896" cy="233.2144" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                        <circle cx="228.7240578151995" cy="249.0154" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                        <circle cx="284.33301901742004" cy="207.022" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                        <circle cx="340.55306770537925" cy="222.75400000000002" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
-                                        <circle cx="396.77311639333846" cy="234.48399999999998" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
-                                        <circle cx="452.382077595559" cy="92.99260000000001" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
-                                        <circle cx="507.3799513120408" cy="153.5194" r="4" fill="#5f76e8"
-                                            stroke="#ffffff" stroke-width="1"
-                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                        <circle cx="563.6" cy="184.6384" r="4" fill="#5f76e8" stroke="#ffffff"
-                                            stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        </circle>
-                                    </svg>
-                                    <div class="morris-hover morris-default-style" style="display: none;"></div>
+                    <!-- column -->
+                    <div class="col-lg-6">
+                        <div class="card h-90">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">기간별 매출현황</h4>
+                                    <ul class="list-inline text-right">
+                                        <li class="list-inline-item">
+                                            <h5>
+                                                <button
+                                                    style="border: 0; border-color: paleturquoise; background-color: rgb(255, 255, 255); outline: none; text-decoration: none;"
+                                                    onclick="this.style.textDecoration = 'underline'">
+                                                    <i class="fa fa-circle mr-1 text-info"></i>월 매출
+                                                </button>
+                                            </h5>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h5>
+                                                <button
+                                                    style="border: 0; border-color: paleturquoise; background-color: rgb(255, 255, 255); outline: none; text-decoration: none;"
+                                                    onclick="this.style.textDecoration = 'underline'">
+                                                    <i class="fa fa-circle mr-1 text-cyan"></i>일 매출
+                                                </button>
+                                            </h5>
+                                        </li>
+                                    </ul>
+                                    <div id="morris-area-chart" style="width: 100%; height: auto;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- column -->
                     <!-- <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
@@ -492,281 +416,8 @@
                 <!-- End Sales Charts Section -->
                 <!-- *************************************************************** -->
                 <!-- *************************************************************** -->
-                <!-- Start Location and Earnings Charts Section -->
-                <!-- *************************************************************** -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex align-items-start">
-                                    <h4 class="card-title mb-0">Earning Statistics</h4>
-                                    <div class="ml-auto">
-                                        <div class="dropdown sub-dropdown">
-                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
-                                                id="dd1" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i data-feather="more-vertical"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
-                                                <a class="dropdown-item" href="#">Insert</a>
-                                                <a class="dropdown-item" href="#">Update</a>
-                                                <a class="dropdown-item" href="#">Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pl-4 mb-5">
-                                    <div class="stats ct-charts position-relative" style="height: 315px;"></div>
-                                </div>
-                                <ul class="list-inline text-center mt-4 mb-0">
-                                    <li class="list-inline-item text-muted font-italic">Earnings for this month</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Recent Activity</h4>
-                                <div class="mt-4 activity">
-                                    <div class="d-flex align-items-start border-left-line pb-3">
-                                        <div>
-                                            <a href="javascript:void(0)" class="btn btn-info btn-circle mb-2 btn-item">
-                                                <i data-feather="shopping-cart"></i>
-                                            </a>
-                                        </div>
-                                        <div class="ml-3 mt-2">
-                                            <h5 class="text-dark font-weight-medium mb-2">New Product Sold!</h5>
-                                            <p class="font-14 mb-2 text-muted">John Musa just purchased <br> Cannon 5M
-                                                Camera.
-                                            </p>
-                                            <span class="font-weight-light font-14 text-muted">10 Minutes Ago</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-start border-left-line pb-3">
-                                        <div>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-danger btn-circle mb-2 btn-item">
-                                                <i data-feather="message-square"></i>
-                                            </a>
-                                        </div>
-                                        <div class="ml-3 mt-2">
-                                            <h5 class="text-dark font-weight-medium mb-2">New Support Ticket</h5>
-                                            <p class="font-14 mb-2 text-muted">Richardson just create support <br>
-                                                ticket</p>
-                                            <span class="font-weight-light font-14 text-muted">25 Minutes Ago</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-start border-left-line">
-                                        <div>
-                                            <a href="javascript:void(0)" class="btn btn-cyan btn-circle mb-2 btn-item">
-                                                <i data-feather="bell"></i>
-                                            </a>
-                                        </div>
-                                        <div class="ml-3 mt-2">
-                                            <h5 class="text-dark font-weight-medium mb-2">Notification Pending Order!
-                                            </h5>
-                                            <p class="font-14 mb-2 text-muted">One Pending order from Ryne <br> Doe</p>
-                                            <span class="font-weight-light font-14 mb-1 d-block text-muted">2 Hours
-                                                Ago</span>
-                                            <a href="javascript:void(0)"
-                                                class="font-14 border-bottom pb-1 border-info">Load
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- *************************************************************** -->
-                <!-- End Location and Earnings Charts Section -->
-                <!-- *************************************************************** -->
-                <!-- *************************************************************** -->
-                <!-- Start Top Leader Table -->
-                <!-- *************************************************************** -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-4">
-                                    <h4 class="card-title">Top Leaders</h4>
-                                    <div class="ml-auto">
-                                        <div class="dropdown sub-dropdown">
-                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
-                                                id="dd1" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i data-feather="more-vertical"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
-                                                <a class="dropdown-item" href="#">Insert</a>
-                                                <a class="dropdown-item" href="#">Update</a>
-                                                <a class="dropdown-item" href="#">Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table no-wrap v-middle mb-0">
-                                        <thead>
-                                            <tr class="border-0">
-                                                <th class="border-0 font-14 font-weight-medium text-muted">Team Lead
-                                                </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2">Project
-                                                </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted">Team</th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
-                                                    Status
-                                                </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
-                                                    Weeks
-                                                </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted">Budget</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="border-top-0 px-2 py-4">
-                                                    <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic1.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
-                                                        <div class="">
-                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Hanna
-                                                                Gover</h5>
-                                                            <span class="text-muted font-14">hgover@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14">Elite Admin</td>
-                                                <td class="border-top-0 px-2 py-4">
-                                                    <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">SS</a>
-                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">RP</a>
-                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
-                                                            href="javascript:void(0)">+</a>
-                                                    </div>
-                                                </td>
-                                                <td class="border-top-0 text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="In Testing"></i></td>
-                                                <td
-                                                    class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
-                                                    35
-                                                </td>
-                                                <td class="font-weight-medium text-dark border-top-0 px-2 py-4">$96K
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="px-2 py-4">
-                                                    <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic2.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
-                                                        <div class="">
-                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Daniel
-                                                                Kristeen
-                                                            </h5>
-                                                            <span class="text-muted font-14">Kristeen@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted px-2 py-4 font-14">Real Homes WP Theme</td>
-                                                <td class="px-2 py-4">
-                                                    <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">SS</a>
-                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
-                                                            href="javascript:void(0)">+</a>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-success font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="Done"></i>
-                                                </td>
-                                                <td class="text-center text-muted font-weight-medium px-2 py-4">32</td>
-                                                <td class="font-weight-medium text-dark px-2 py-4">$85K</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="px-2 py-4">
-                                                    <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic3.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
-                                                        <div class="">
-                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Julian
-                                                                Josephs
-                                                            </h5>
-                                                            <span class="text-muted font-14">Josephs@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted px-2 py-4 font-14">MedicalPro WP Theme</td>
-                                                <td class="px-2 py-4">
-                                                    <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">SS</a>
-                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item"
-                                                            href="javascript:void(0)">RP</a>
-                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
-                                                            href="javascript:void(0)">+</a>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="Done"></i>
-                                                </td>
-                                                <td class="text-center text-muted font-weight-medium px-2 py-4">29</td>
-                                                <td class="font-weight-medium text-dark px-2 py-4">$81K</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="px-2 py-4">
-                                                    <div class="d-flex no-block align-items-center">
-                                                        <div class="mr-3"><img
-                                                                src="assets/images/users/widget-table-pic4.jpg"
-                                                                alt="user" class="rounded-circle" width="45"
-                                                                height="45" /></div>
-                                                        <div class="">
-                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Jan
-                                                                Petrovic
-                                                            </h5>
-                                                            <span class="text-muted font-14">hgover@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted px-2 py-4 font-14">Hosting Press HTML</td>
-                                                <td class="px-2 py-4">
-                                                    <div class="popover-icon">
-                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
-                                                            href="javascript:void(0)">DS</a>
-                                                        <a class="btn btn-success text-white font-20 rounded-circle btn-circle"
-                                                            href="javascript:void(0)">+</a>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-danger font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="In Progress"></i></td>
-                                                <td class="text-center text-muted font-weight-medium px-2 py-4">23</td>
-                                                <td class="font-weight-medium text-dark px-2 py-4">$80K</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
                 <!-- *************************************************************** -->
                 <!-- End Top Leader Table -->
                 <!-- *************************************************************** -->
@@ -797,6 +448,7 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <script src="dist/js/pages/morris/morris-data.js"></script>
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -819,6 +471,12 @@
     <!-- Chart JS -->
     <script src="dist/js/pages/chartjs/chartjs.init.js"></script>
     <script src="assets/libs/chart.js/dist/Chart.min.js"></script>
+    <!--Morris JavaScript -->
+    <script src="assets/libs/raphael/raphael.min.js"></script>
+    <script src="assets/libs/morris.js/morris.min.js"></script>
+    <script src="dist/js/pages/morris/morris-data.js"></script>
+
+
 </body>
 
 </html>

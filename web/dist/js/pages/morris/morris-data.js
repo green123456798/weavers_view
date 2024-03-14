@@ -5,44 +5,39 @@ Morris.Area({
         element: 'morris-area-chart',
         data: [{
             period: '2010',
-            iphone: 50,
-            ipad: 80,
+            month: 50,
+            date: 80,
             itouch: 20
         }, {
             period: '2011',
-            iphone: 130,
-            ipad: 100,
+            month: 130,
+            date: 100,
             itouch: 80
         }, {
             period: '2012',
-            iphone: 80,
-            ipad: 60,
+            month: 80,
+            date: 60,
             itouch: 70
         }, {
             period: '2013',
-            iphone: 70,
-            ipad: 200,
+            month: 70,
+            date: 200,
             itouch: 140
         }, {
             period: '2014',
-            iphone: 180,
-            ipad: 150,
+            month: 180,
+            date: 150,
             itouch: 140
         }, {
             period: '2015',
-            iphone: 105,
-            ipad: 100,
+            month: 105,
+            date: 100,
             itouch: 80
-        },
-         {
-            period: '2016',
-            iphone: 250,
-            ipad: 150,
-            itouch: 200
+        
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad'],
-        labels: ['iPhone', 'iPad'],
+        ykeys: ['month', 'date'],
+        labels: ['month', 'date'],
         pointSize: 3,
         fillOpacity: 0,
         pointStrokeColors:['#5f76e8', '#01caf1'],
@@ -52,7 +47,6 @@ Morris.Area({
         hideHover: 'auto',
         lineColors: ['#5f76e8', '#01caf1'],
         resize: true
-        
     });
 
 Morris.Area({

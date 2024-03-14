@@ -26,13 +26,13 @@
 	$(function () {
 		"use strict";
 		// 변경된 데이터
-		var newData = [3000, 2000, 1000];
+		var newData = [4000,3000, 2000, 1000];
 	
 		// Bar chart
 		new Chart(document.getElementById("bar-chart"), {
 			type: 'bar',
 			data: {
-			  labels: ["스킨케어", "클렌징", "마스크,팩"],
+			  labels: ["총매출", "스킨케어", "클렌징", "마스크,팩"],
 			  datasets: [
 				{
 				  label: "Population (millions)",
