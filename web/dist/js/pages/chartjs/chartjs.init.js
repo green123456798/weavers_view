@@ -1,4 +1,4 @@
-$(function () {
+/* $(function () {
     "use strict";
 	// Bar chart
 	new Chart(document.getElementById("bar-chart"), {
@@ -17,10 +17,55 @@ $(function () {
 		  legend: { display: false },
 		  title: {
 			display: true, 
-			text: 'Predicted world population (millions) in 2050'
+			text: '일일 매출 현황'
 		  }
 		}
+
+	}); */
+
+	$(function () {
+		"use strict";
+		// 변경된 데이터
+		var newData = [3000, 2000, 1000];
+	
+		// Bar chart
+		new Chart(document.getElementById("bar-chart"), {
+			type: 'bar',
+			data: {
+			  labels: ["스킨케어", "클렌징", "마스크,팩"],
+			  datasets: [
+				{
+				  label: "Population (millions)",
+				  backgroundColor: ["#6174d5", "#5f76e8", "#768bf4", "#7385df", "#b1bdfa"],
+				  data: newData // 변경된 데이터를 사용
+				}
+			  ]
+			},
+			options: {
+			  legend: { display: false },
+			  title: {
+				display: true, 
+				text: '카테고리별 매출 현황',
+				fontSize:15
+			  },
+			  scales: {
+				xAxes: [{
+					categoryPercentage: 0.5, // 막대 간 간격 설정
+					barPercentage: 0.8 // 막대 너비 설정 (0~1 사이의 비율)
+				}],
+				yAxes: [{
+				  ticks: {
+					beginAtZero: true
+				  }
+				}]
+			  }
+			}
+		});
 	});
+
+
+// 초기에 차트를 생성합니다.
+var myChart = createBarChart(chartData);
 
 	// New chart
 	new Chart(document.getElementById("pie-chart"), {
@@ -161,4 +206,4 @@ $(function () {
 	});
 
 	// line second
-}); 
+/* });  */
