@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var rowPerPage = 3; // 기본 페이지당 행 수 설정
+    var rowPerPage = 10; // 기본 페이지당 행 수 설정
 
     var $products = $('#products');
 
