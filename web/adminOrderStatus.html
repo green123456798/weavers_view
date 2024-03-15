@@ -30,6 +30,8 @@
         }
     </style>
 
+
+
     <style>
         .custom {
             appearance: none;
@@ -168,6 +170,49 @@
         .membertable {
             border-top: 1px solid #e8eef3;
             /* 위쪽 테두리에 스타일 줌 */
+        }
+
+        form {
+            width: 500px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        th,
+        td {
+            padding: 3px 10px;
+        }
+
+        .off-screen {
+            display: none;
+        }
+
+        #nav {
+            width: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #nav a {
+            display: inline-block;
+            padding: 3px 5px;
+            margin-right: 10px;
+            font-family: Tahoma;
+            background: #ffffff;
+            color: #000;
+            text-decoration: none;
+            position: relative;
+            /* 상대 위치 지정 */
+        }
+
+
+
+        #nav a.active {
+            background: #333;
+            color: #fff;
         }
     </style>
 
@@ -413,21 +458,28 @@
                                                             </div>
                                                         </div>
                                                         <br>
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-md-6 text-center">
-                                                                <button type="button"
-                                                                    class="btn btn-primary" "><i class=" fas
-                                                                    fa-check"></i>
-                                                                    검색</button>
-                                                            </div>
-                                                        </div>
                                                 </div>
                                                 </form>
                                             </div>
+
+                                        </div>
+                                        <div class="row">
+
                                         </div>
 
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6 text-center">
+                                                <button type="button" class="btn btn-primary" "><i class=" fas
+                                                    fa-check"></i>
+                                                    검색</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='cur-row' style="color: #000000;">
+                                        <div>검색결과</div>
+                                        <br>
                                         <div class="table-wrapper">
-                                            <table>
+                                            <table id="products" border="1">
                                                 <thead>
                                                     <tr style="color: #000000;">
                                                         <th>주문번호</th>
@@ -477,20 +529,81 @@
                                                             </select></td>
                                                         <td>1</td>
                                                     </tr>
+                                                    <tr style="color: #000000;">
+                                                        <td>3</td>
+                                                        <td>Michael Johnson</td>
+                                                        <td>35</td>
+                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr style="color: #000000;">
+                                                        <td>3</td>
+                                                        <td>Michael Johnson</td>
+                                                        <td>35</td>
+                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr style="color: #000000;">
+                                                        <td>3</td>
+                                                        <td>Michael Johnson</td>
+                                                        <td>35</td>
+                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr style="color: #000000;">
+                                                        <td>3</td>
+                                                        <td>Michael Johnson</td>
+                                                        <td>35</td>
+                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr style="color: #000000;">
+                                                        <td>3</td>
+                                                        <td>Michael Johnson</td>
+                                                        <td>35</td>
+                                                        <td>ddddd</td>
+                                                        <td><select class="custom-select mr-sm-2"
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
+                                                                <option value="1">접수</option>
+                                                                <option value="2">완료</option>
+                                                            </select></td>
+                                                        <td>1</td>
+                                                    </tr>
 
                                                 </tbody>
                                             </table>
-                                        </div>
+                                            <div id="nav">
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- 제일 큰 div-->
+                    </div> <!-- 제일 큰 div-->
+                </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
     </div>
@@ -527,8 +640,8 @@
     <!--This page plugins -->
     <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
-
-
+    <!-- 페이징처리 -->
+    <script src="dist/js/tablePage.js"></script>
 </body>
 
 </html>
