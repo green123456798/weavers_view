@@ -67,6 +67,8 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed;
+            /* 테이블의 너비가 유지되도록 설정 */
         }
 
         th,
@@ -74,6 +76,18 @@
             border: 1px solid black;
             padding: 8px;
             text-align: left;
+            overflow-x: auto;
+            /* 가로 오버플로우 스크롤 생성 */
+            /* max-width: 200px; */
+            /* 테이블 셀 내부의 최대 너비 설정 */
+            /* overflow: hidden; */
+            white-space: nowrap;
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* 테이블 헤더의 배경색 설정 */
         }
 
         @media screen and (max-width: 768px) {
@@ -85,6 +99,28 @@
             }
         }
     </style>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+            /* 스크롤 바의 가로 너비 */
+        }
+
+        /* Firefox 브라우저에 적용되는 스크롤 바 스타일 */
+        /* Firefox에서는 스크롤 바의 가로 너비만 제어할 수 있습니다. */
+        /* 세로 스크롤 바는 브라우저의 기본 스타일이 적용됩니다. */
+        * {
+            scrollbar-width: thin;
+        }
+
+        /* IE 및 Edge 브라우저(이전 버전)에 적용되는 스크롤 바 스타일 */
+        /* Microsoft Edge(Chromium)에서는 사용되지 않습니다. */
+        *::-ms-scrollbar {
+            width: 5px;
+            /* 스크롤 바의 가로 너비 */
+        }
+    </style>
+
 
 
 
@@ -348,44 +384,31 @@
                                     <div class='cur-row' style="color: #000000;">
                                         <div>검색결과</div>
                                         <br>
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>아이디</th>
-                                                    <th>이름</th>
-                                                    <th>등급</th>
-                                                    <th>생일</th>
-                                                    <th>가입일</th>
-                                                    <th>이메일수신동의</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="membertable">1</th>
-                                                    <td><a href="/adminMemberUpdate">Mark</a></td>
-                                                    <td><a href="/adminMemberUpdate">Otto</a></td>
-                                                    <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                    <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                    <td><a href="/adminMemberUpdate">@mdo</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="membertable">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                    <td>@fat</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" class="membertable">3</th>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                    <td>@twitter</td>
-                                                    <td>@twitter</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="table-wrapper">
+                                            <table style="width: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>이름</th>
+                                                        <th>등급</th>
+                                                        <th>생일</th>
+                                                        <th>가입일</th>
+                                                        <th>email 수신 동의</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr style="color: #000000;">
+                                                        <td>1</td>
+                                                        <td>값받기 </td>
+                                                        <td>값받기</td>
+                                                        <td>값받기</td>
+                                                        <td>값받기</td>
+                                                        <td>값받기</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <!-- </table> -->
                                     </div>
                                 </div>

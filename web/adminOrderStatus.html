@@ -53,16 +53,35 @@
 
 
     <style>
-        .table-wrapper {
-            overflow-x: auto;
-            /* 가로 스크롤을 자동으로 추가합니다. */
-            white-space: nowrap;
-            /* 텍스트가 줄 바꿈되지 않도록 설정합니다. */
+        .table-responsive {
+            overflow-x: hidden;
+            /* 가로 스크롤 숨김 */
+            overflow-y: auto;/
         }
+    </style>
 
+    <style>
+        .row.justify-content-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* 가운데 정렬 */
+        }
+    </style>
+
+    <style>
+        .membertable {
+            border-top: 1px solid #e8eef3;
+            /* 위쪽 테두리에 스타일 줌 */
+        }
+    </style>
+
+    <style>
         table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed;
+            /* 테이블의 너비가 유지되도록 설정 */
         }
 
         th,
@@ -70,6 +89,18 @@
             border: 1px solid black;
             padding: 8px;
             text-align: left;
+            overflow-x: auto;
+            /* 가로 오버플로우 스크롤 생성 */
+            /* max-width: 200px; */
+            /* 테이블 셀 내부의 최대 너비 설정 */
+            /* overflow: hidden; */
+            white-space: nowrap;
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* 테이블 헤더의 배경색 설정 */
         }
 
         @media screen and (max-width: 768px) {
@@ -83,6 +114,27 @@
     </style>
 
     <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+            /* 스크롤 바의 가로 너비 */
+        }
+
+        /* Firefox 브라우저에 적용되는 스크롤 바 스타일 */
+        /* Firefox에서는 스크롤 바의 가로 너비만 제어할 수 있습니다. */
+        /* 세로 스크롤 바는 브라우저의 기본 스타일이 적용됩니다. */
+        * {
+            scrollbar-width: thin;
+        }
+
+        /* IE 및 Edge 브라우저(이전 버전)에 적용되는 스크롤 바 스타일 */
+        /* Microsoft Edge(Chromium)에서는 사용되지 않습니다. */
+        *::-ms-scrollbar {
+            width: 5px;
+            /* 스크롤 바의 가로 너비 */
+        }
+    </style>
+
+    <style>
         ::placeholder {
             color: #000000;
             /* Placeholder 색상 변경 */
@@ -92,13 +144,16 @@
 
 
 
-    <!-- <style>
-        .table-responsive {
+    <style>
+        #inlineFormCustomSelect {
             overflow-x: hidden;
             /* 가로 스크롤 숨김 */
-            overflow-y: auto;/
+            overflow-y: auto;
+            /* 세로 스크롤 표시 */
+            width: 100%;
+            /* 선택 요소의 가로 너비 설정 */
         }
-    </style> -->
+    </style>
 
     <style>
         .row.justify-content-center {
@@ -384,39 +439,39 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
+                                                    <tr style="color: #000000;">
                                                         <td>1</td>
                                                         <td>John Doe</td>
                                                         <td>ddddddddddddddd</td>
                                                         <td>ddddd</td>
                                                         <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect">
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
                                                                 <option value="1">접수</option>
                                                                 <option value="2">완료</option>
                                                             </select></td>
                                                         <td>1</td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr style="color: #000000;">
                                                         <td>2</td>
                                                         <td>Jane Smith</td>
                                                         <td>25</td>
                                                         <td>ddddd</td>
                                                         <td>
                                                             <select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect">
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
                                                                 <option value="1">접수</option>
                                                                 <option value="2">완료</option>
                                                             </select>
                                                         </td>
                                                         <td>1</td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr style="color: #000000;">
                                                         <td>3</td>
                                                         <td>Michael Johnson</td>
                                                         <td>35</td>
                                                         <td>ddddd</td>
                                                         <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect">
+                                                                id="inlineFormCustomSelect" style="color: #000000;">
                                                                 <option value="1">접수</option>
                                                                 <option value="2">완료</option>
                                                             </select></td>
