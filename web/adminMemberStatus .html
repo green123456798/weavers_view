@@ -119,8 +119,51 @@
             width: 5px;
             /* 스크롤 바의 가로 너비 */
         }
-    </style>
 
+
+        form {
+            width: 500px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        th,
+        td {
+            padding: 3px 10px;
+        }
+
+        .off-screen {
+            display: none;
+        }
+
+        #nav {
+            width: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #nav a {
+            display: inline-block;
+            padding: 3px 5px;
+            margin-right: 10px;
+            font-family: Tahoma;
+            background: #ffffff;
+            color: #000;
+            text-decoration: none;
+            position: relative;
+            /* 상대 위치 지정 */
+        }
+
+
+
+        #nav a.active {
+            background: #333;
+            color: #fff;
+        }
+    </style>
 
 
 
@@ -384,42 +427,122 @@
                                     <div class='cur-row' style="color: #000000;">
                                         <div>검색결과</div>
                                         <br>
-                                        <div class="table-wrapper">
-                                            <table style="width: 100%;">
-                                                <thead>
-                                                    <tr>
-                                                        <th> ID </th>
-                                                        <th>이름</th>
-                                                        <th>등급</th>
-                                                        <th>생일</th>
-                                                        <th>가입일</a></th>
-                                                        <th>email 수신 동의</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
-                                                        <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
-                                                        <td><a href="adminMemberUpdateTest.html">값받기</a></td>
-                                                        <td><a href="adminMemberUpdateTest.html">값받기</a></td>
-                                                        <td><a href="adminMemberUpdateTest.html">값받기</a></td>
-                                                        <td><a href="adminMemberUpdateTest.html">값받기</a></td>
-                                                    </tr>
+                                        <table id="products" border="1">
 
-                                                </tbody>
-                                            </table>
+                                            <thead>
+                                                <tr>
+                                                    <th> ID </th>
+                                                    <th>이름</th>
+                                                    <th>등급</th>
+                                                    <th>생일</th>
+                                                    <th>가입일</a></th>
+                                                    <th>email 수신 동의</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                                <tr style="color: #000000;">
+                                                    <td>1</td>
+                                                    <!-- 회원을 검색하면 그 회원 수정 페이지로 갈 수 있게 -->
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a> </td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                    <td><a href="adminMemberUpdateTest.html">값받기</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div id="nav">
+                                            <!-- </table> -->
                                         </div>
-                                        <!-- </table> -->
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> <!-- 제일 큰 div-->
+                        </div> <!-- 제일 큰 div-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
     <!-- ============================================================== -->
@@ -456,6 +579,8 @@
     <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
 
+
+    <script src="dist/js/tablePage.js"></script>
 </body>
 
 </html>
