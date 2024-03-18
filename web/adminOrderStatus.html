@@ -216,6 +216,84 @@
         }
     </style>
 
+    <style>
+        /* 모달 스타일 */
+        .modal {
+            display: none;
+            /* 초기에는 모달을 표시하지 않음 */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* 스크롤이 필요한 경우에만 스크롤 표시 */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 배경색을 반투명하게 설정 */
+        }
+
+        /* 모달 내용 스타일 */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 화면 중앙에 위치 */
+            padding: 5%;
+            border: 1px solid #888;
+            width: 80%;
+            margin-left: 15%;
+            /* 왼쪽 여백을 추가하여 오른쪽으로 이동 */
+            box-shadow: 0 4px 8px 0 rgb(146, 145, 145), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+
+        /* 애니메이션 효과 */
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* 닫기 버튼 스타일 */
+        .close {
+            color: #000000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .close {
+            color: #000000;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            /* 필요에 따라 패딩 설정 */
+        }
+
+        .productName:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(4, 184, 255);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -493,162 +571,80 @@
                                                         <td>1</td>
                                                         <td>John Doe</td>
                                                         <td>ddddddddddddddd</td>
-                                                        <td class="product">ddddd</td>
+                                                        <td class="productName">${datas[0]}외
+                                                            ${fn:length(data)-1}개</td>
                                                         <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
+                                                        <td>
+                                                            <select class="custom-select mr-sm-2"
                                                                 id="inlineFormCustomSelect" style="color: #000000;">
                                                                 <option value="1">접수</option>
                                                                 <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td>ddddd</td>
-                                                        <td>1</td>
-                                                        <td><select class="custom-select mr-sm-2"
-                                                                id="inlineFormCustomSelect" style="color: #000000;">
-                                                                <option value="1">접수</option>
-                                                                <option value="2">완료</option>
-                                                            </select></td>
+                                                            </select>
+                                                        </td>
                                                         <td>1</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                             <div id="nav">
                                             </div>
+
+                                            <!-- 모달 -->
+                                            <div id="myModal" class="modal">
+                                                <!-- 모달 내용 -->
+                                                <div class="modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <p id="productNameModal"></p> <!-- 상품명을 보여줄 요소 -->
+                                                </div>
+                                            </div>
+
+                                            <script>
+                                                // 상품명이 클릭되었을 때 모달을 표시하는 함수
+                                                // 상품명이 클릭되었을 때 모달을 표시하는 함수
+                                                document.querySelectorAll('.productName').forEach(function (productName) {
+                                                    productName.addEventListener('click', function () {
+                                                        var modal = document.getElementById("myModal");
+                                                        var productNameModal = document.getElementById("productNameModal");
+                                                        // 표 생성
+                                                        var tableHTML = `
+            <table id="products" border="1">
+                <thead>
+                    <tr style="color: #000000;">
+                        <th>주문날짜</th>
+                        <th>주문자</th>
+                        <th>상품명</th>
+                        <th>총결제금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-02-14</td>
+                        <td>John Doe</td>
+                        <td>나중에 el 태그 넣기</td> 
+                        <td>10000원</td>
+                    </tr>
+                </tbody>
+            </table>`;
+                                                        // 모달에 표 삽입
+                                                        productNameModal.innerHTML = tableHTML;
+                                                        modal.style.display = "block"; // 모달 표시
+                                                    });
+                                                });
+
+
+                                                // 모달 닫기 버튼에 이벤트 바인딩
+                                                document.querySelector('.close').addEventListener('click', function () {
+                                                    var modal = document.getElementById("myModal");
+                                                    modal.style.display = "none"; // 모달 숨김
+                                                });
+
+                                                // 모달 영역 밖을 클릭하면 모달 닫기
+                                                window.onclick = function (event) {
+                                                    var modal = document.getElementById("myModal");
+                                                    if (event.target === modal) {
+                                                        modal.style.display = "none"; // 모달 숨김
+                                                    }
+                                                }
+                                            </script>
 
                                         </div>
                                     </div>
