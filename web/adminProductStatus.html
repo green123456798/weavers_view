@@ -15,6 +15,17 @@
   <link href="assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link href="dist/css/style.min.css" rel="stylesheet" />
+
+  <style>
+    #zero_config .sorting_1 {
+      background-color: rgb(255, 255, 255) !important;
+      color: black !important;
+    }
+
+    .odd {
+      background-color: rgb(255, 255, 255) !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -216,12 +227,14 @@
             <div class="card">
               <div class="card-body">
                 <h1 class="card-title">상품 현황</h1>
+                <br>
                 <div class="table-responsive">
-                  <table id="zero_config" class="table table-striped table-bordered no-wrap">
+                  <table id="zero_config" class="table table-striped table-bordered no-wrap"
+                    style="background-color: rgb(255, 255, 255) !important; color: black !important;">
                     <thead>
                       <tr>
-                        <th>상품명</th>
                         <th>상품코드</th>
+                        <th>상품명</th>
                         <th>상품가격</th>
                         <th>수량</th>
                         <th>판매상태</th>
@@ -229,44 +242,15 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
+                        <td><a href="adminProductUpdate.html?">Tiger Nixon</a></td>
+                        <td><a href="adminProductUpdate.html">System Architect</a></td>
+                        <td><a href="adminProductUpdate.html?">Edinburgh</a></td>
                         <td>2011/04/25</td>
-                        <td>$320,800</td>
-                      </tr>
-                      <tr>
-                        <td>Garrett Winters</td>
-                        <td>Accountant</td>
-                        <td>63</td>
-                        <td>2011/07/25</td>
-                        <td>$170,750</td>
-                      </tr>
-                      <tr>
-                        <td>Ashton Cox</td>
-                        <td>Junior Technical Author</td>
-                        <td>66</td>
-                        <td>2009/01/12</td>
-                        <td>$86,000</td>
-                      </tr>
-                      <tr>
-                        <td>Cedric Kelly</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>22</td>
-                        <td>2012/03/29</td>
-                        <td>$433,060</td>
+                        <td>320,800</td>
                       </tr>
                     </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>번호</th>
-                        <th>상품코드</th>
-                        <th>상품명</th>
-                        <th>상품가격</th>
-                        <th>수량</th>
-                      </tr>
-                    </tfoot>
                   </table>
+
                 </div>
               </div>
             </div>

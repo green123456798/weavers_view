@@ -296,89 +296,97 @@
                                                         <div class='cur-row' style="color:#000000; display: flex; ">
                                                             <div>카테고리</div>
                                                             <div style="margin-left: 15px;">
-                                                                <select class="custom-select mr-sm-2"
-                                                                    id="select-categoryupdate"
-                                                                    style="color: black; width: auto;">
-                                                                    <option value="1">스킨케어</option>
-                                                                    <option value="2">클렌징</option>
-                                                                    <option value="3">팩</option>
-                                                                    <option value="4">선케어</option>
-                                                                </select>
-                                                            </div>
-                                                            <div>
-                                                                <select class="custom-select mr-sm-2"
-                                                                    id="select-subcategoryupdate"
-                                                                    style="color: black; width: auto;">
-                                                                    <option value="1">나중에 비동기로</option>
-                                                                    <option value="2">값 가져와서 넣기</option>
-                                                                    <option value="3">카테고리에 맞는 </option>
-                                                                    <option value="4">세부카테고리나오게 </option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class='cur-row' style="color:#000000; display: flex;">
-                                                            <div>상품명</div>
-                                                            <div class="col-md-5" style="margin-left: 15px;">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="ex) 촉촉한 스킨">
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class='cur-row' style="color:#000000; display: flex;">
-                                                            <div>판매가</div>
-                                                            <div class="col-md-5" style="margin-left: 15px;">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="ex) 25,000">
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class='cur-row' style="color:#000000">
-                                                            <div>등록일</div>
-                                                            <div class="col-md-5" style="margin-left: 15px;">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="값 받아오기" readonly>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class='cur-row' style="color:#000000; display: flex;">
-                                                            <div>판매상태</div>
-                                                            <div class="col-md-5">
-                                                                <select class="custom-select mr-sm-2"
-                                                                    id="registration-salestatus" style="color: black">
-                                                                    <option value="1">판매중</option>
-                                                                    <option value="2">판매완료</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class='cur-row' style="color:#000000; display: flex;">
-                                                            <div>재고수량</div>
-                                                            <div class="col-md-5">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="ex) 100">
-                                                            </div>
-                                                        </div>
+                                                                <div class="custom-control custom-radio">
+                                                                    <input type="radio" id="customRadio1"
+                                                                        name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="customRadio1">스킨/로션</label>
 
-                                                        <br>
-                                                        <div class='cur-row' style="color:#000000; display: flex;">
-                                                            <div>상세설명</div>
+                                                                    <input type="radio" id="customRadio1"
+                                                                        style="margin-right: 100px;" name="customRadio"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="customRadio1">스킨/로션</label>
+                                                                </div>
+
+                                                            </div>
                                                         </div>
                                                         <br>
-                                                        <div class="table-responsive">
-                                                            <div id="classic"></div>
-                                                            </td>
-                                                            </tr>
-                                                            <!-- end table-responsive-->
-                                                            <div class="float-right" style="height: 50px;">
-                                                                <br>
-                                                                <button type="button" class="btn btn-primary"><i
-                                                                        class="fas fa-check"></i>
-                                                                    완료</button>
-                                                                <button type="button" class="btn btn-primary"><i
-                                                                        class="fas fa-check"></i>
-                                                                    취소</button>
+                                                        <div class='cur-row' style="color:#000000; display: flex; ">
+                                                            <div>세부카테고리</div>
+                                                            <div>
+                                                                <div class="custom-control custom-radio">
+                                                                    <input type="radio" id="customRadio1"
+                                                                        name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="customRadio1">Toggle this custom
+                                                                        radio</label>
+                                                                </div>
                                                             </div>
+                                                        </div>
+                                                </div>
+                                                <br>
+                                                <div class='cur-row' style="color:#000000; display: flex;">
+                                                    <div>상품명</div>
+                                                    <div class="col-md-5" style="margin-left: 15px;">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="ex) 촉촉한 스킨">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class='cur-row' style="color:#000000; display: flex;">
+                                                    <div>판매가</div>
+                                                    <div class="col-md-5" style="margin-left: 15px;">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="ex) 25,000">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class='cur-row' style="color:#000000">
+                                                    <div>등록일</div>
+                                                    <div class="col-md-5" style="margin-left: 15px;">
+                                                        <input type="text" class="form-control" placeholder="값 받아오기"
+                                                            readonly>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class='cur-row' style="color:#000000; display: flex;">
+                                                    <div>판매상태</div>
+                                                    <div class="col-md-5">
+                                                        <select class="custom-select mr-sm-2"
+                                                            id="registration-salestatus" style="color: black">
+                                                            <option value="1">판매중</option>
+                                                            <option value="2">판매완료</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class='cur-row' style="color:#000000; display: flex;">
+                                                    <div>재고수량</div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control" placeholder="ex) 100">
+                                                    </div>
+                                                </div>
+
+                                                <br>
+                                                <div class='cur-row' style="color:#000000; display: flex;">
+                                                    <div>상세설명</div>
+                                                </div>
+                                                <br>
+                                                <div class="table-responsive">
+                                                    <div id="classic"></div>
+                                                    </td>
+                                                    </tr>
+                                                    <!-- end table-responsive-->
+                                                    <div class="float-right" style="height: 50px;">
+                                                        <br>
+                                                        <button type="button" class="btn btn-primary"><i
+                                                                class="fas fa-check"></i>
+                                                            완료</button>
+                                                        <button type="button" class="btn btn-primary"><i
+                                                                class="fas fa-check"></i>
+                                                            취소</button>
+                                                    </div>
                                                     </form>
                                                     <script>
                                                         ClassicEditor
