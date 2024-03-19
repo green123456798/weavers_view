@@ -413,68 +413,15 @@
                                                                     취소</button>
                                                             </div>
                                                     </form>
-
-                                                    <script>
-                                                        ClassicEditor
-                                                            .create(document.querySelector('#classic'))
-                                                            .catch(error => {
-                                                                console.error(error);
-                                                            });
-                                                    </script>
-
-                                                    <script>
-                                                        // 라디오 버튼 클릭 시 서브카테고리 표시/숨김 함수
-                                                        function showSubCategories(category) {
-                                                            // 모든 서브카테고리 숨김
-                                                            var subCategories = document.querySelectorAll('.sub-categories');
-                                                            subCategories.forEach(function (subCategory) {
-                                                                subCategory.style.display = 'none';
-                                                            });
-
-                                                            // 선택한 카테고리에 해당하는 서브카테고리 표시
-                                                            var selectedSubCategory = document.querySelector('.' + category);
-                                                            if (selectedSubCategory && category === 'skin') {
-                                                                selectedSubCategory.style.display = 'block';
-                                                            }
-                                                        }
-
-                                                        // 페이지 로드 시 초기화
-                                                        document.addEventListener('DOMContentLoaded', function () {
-                                                            // 초기로드 시 '스킨' 서브카테고리 표시
-                                                            showSubCategories('skin');
-
-                                                            // 라디오 버튼 클릭 시 해당하는 서브카테고리 표시
-                                                            var categoryRadios =
-                                                                document.querySelectorAll('input[name="category"]');
-                                                            categoryRadios.forEach(function (radio) {
-                                                                radio.addEventListener('click', function () {
-                                                                    showSubCategories(this.value);
-                                                                });
-                                                            });
-
-                                                            // 세부 카테고리 라디오 버튼 클릭 시
-                                                            var subCategoryRadios =
-                                                                document.querySelectorAll('input[name="subCategory"]');
-                                                            subCategoryRadios.forEach(function (radio) {
-                                                                radio.addEventListener('click', function () {
-                                                                    // 여기에서 원하는 동작 추가
-                                                                });
-                                                            });
-                                                        });
-                                                    </script>
-
-
-
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div> <!-- end card-body-->
                             </div>
-                            < !--end card-->
+                            <!--end card-->
                         </div>
-                        < !--end col-->
+                        <!--end col-->
                     </div>
                 </div>
             </div>
@@ -482,79 +429,122 @@
     </div>
     </div>
     </div>
-    < !--==============================================================-->
-        < !--End Container fluid-->
-            < !--==============================================================-->
-                < !--==============================================================-->
-                    < !--footer -->
-                        < !--==============================================================-->
-                            <footer class="footer text-center text-muted">
-                                Web Wevers <a href="http://koreaitsecurity.net/">WebWevers</a>
-                            </footer>
-                            <!-- ============================================================== -->
-                            < !--End footer-->
-                                < !--==============================================================-->
-                                    </div>
-                                    < !--==============================================================-->
-                                        < !--End Page wrapper-->
-                                            < !--==============================================================-->
-                                                </div>
-                                                < !--==============================================================-->
-                                                    < !--End Wrapper-->
-                                                        <
-                                                            !--==============================================================-->
-                                                            < !--End Wrapper-->
-                                                                <
-                                                                    !--==============================================================-->
-                                                                    < !--All Jquery-->
-                                                                        <
-                                                                            !--==============================================================-->
-                                                                            <script
-                                                                                src="assets/libs/jquery/dist/jquery.min.js"></script>
-                                                                            <!-- Bootstrap tether Core JavaScript -->
-                                                                            <script
-                                                                                src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-                                                                            <script
-                                                                                src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-                                                                            <!-- apps -->
-                                                                            <!-- apps -->
-                                                                            <script
-                                                                                src="dist/js/app-style-switcher.js"></script>
-                                                                            <script
-                                                                                src="dist/js/feather.min.js"></script>
-                                                                            <!-- slimscrollbar scrollbar JavaScript -->
-                                                                            <script
-                                                                                src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-                                                                            <script
-                                                                                src="assets/extra-libs/sparkline/sparkline.js"></script>
-                                                                            <!--Wave Effects -->
-                                                                            <!-- themejs -->
-                                                                            <!--Menu sidebar -->
-                                                                            <script
-                                                                                src="dist/js/sidebarmenu.js"></script>
-                                                                            <!--Custom JavaScript -->
-                                                                            <script
-                                                                                src="dist/js/custom.min.js"></script>
-                                                                            <!--This page plugins -->
-                                                                            <script
-                                                                                src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
-                                                                            <script
-                                                                                src="dist/js/pages/datatable/datatable-basic.init.js"></script>
+    <!--footer -->
+    <!--==============================================================-->
+    <footer class="footer text-center text-muted">
+        Web Wevers <a href="http://koreaitsecurity.net/">WebWevers</a>
+    </footer>
+    <!-- ============================================================== -->
+    <!--End footer-->
+    <!--==============================================================-->
+    </div>
+    <!--==============================================================-->
+    <!--End Page wrapper-->
+    <!--==============================================================-->
+    </div>
+    <!--==============================================================-->
+    <!--End Wrapper-->
+    <!--==============================================================-->
+    <!--End Wrapper-->
+    <!--==============================================================-->
+    <!--All Jquery-->
+    <!--==============================================================-->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="dist/js/feather.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <!-- themejs -->
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.min.js"></script>
+    <!--This page plugins -->
+    <script src="assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
 
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#classic'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 
-                                                                            <script>
-                                                                                // JavaScript 코드
-                                                                                document.addEventListener("DOMContentLoaded", function () {
-                                                                                    // 라디오 버튼 요소들을 가져옴
-                                                                                    const categoryRadios = document.querySelectorAll('.category');
+    <script>
+        // 라디오 버튼 클릭 시 서브카테고리 표시/숨김 함수
+        function showSubCategories(category) {
+            // 모든 서브카테고리 숨김
+            var subCategories = document.querySelectorAll('.sub-categories');
+            subCategories.forEach(function (subCategory) {
+                subCategory.style.display = 'none';
+            });
 
-                                                                                    // 라디오 버튼에 대한 이벤트 리스너 추가
-                                                                                    categoryRadios.forEach(function (radio) {
-                                                                                        radio.addEventListener('click', function () {
-                                                                                            // 선택된 라디오 버튼의 값에 따라 세부카테고리 내용 변경
-                                                                                            const subCategoryElement = document.querySelector('.sub-category');
-                                                                                            if (radio.value === 'skin') {
-                                                                                                subCategoryElement.innerHTML = `
+            // 선택한 카테고리에 해당하는 서브카테고리 표시
+            var selectedSubCategory = document.querySelector('.' + category);
+            if (selectedSubCategory && category === 'skin') {
+                selectedSubCategory.style.display = 'block';
+            }
+        }
+
+        // 페이지 로드 시 초기화
+        document.addEventListener('DOMContentLoaded', function () {
+            // 초기로드 시 '스킨' 서브카테고리 표시
+            showSubCategories('skin');
+
+            // 라디오 버튼 클릭 시 해당하는 서브카테고리 표시
+            var categoryRadios =
+                document.querySelectorAll('input[name="category"]');
+            categoryRadios.forEach(function (radio) {
+                radio.addEventListener('click', function () {
+                    showSubCategories(this.value);
+                });
+            });
+
+            // 세부 카테고리 라디오 버튼 클릭 시
+            var subCategoryRadios =
+                document.querySelectorAll('input[name="subCategory"]');
+            subCategoryRadios.forEach(function (radio) {
+                radio.addEventListener('click', function () {
+                    // 여기에서 원하는 동작 추가
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 초기로드 시 컨트롤러에서 선택된 값 가져오기
+            var selectedCategory = "skin"; // 여기에 실제 컨트롤러에서 받아온 값 설정
+
+            // 선택된 카테고리에 해당하는 라디오 버튼 선택
+            var selectedCategoryRadio = document.querySelector('input[name="category"][value="' + selectedCategory + '"]');
+            if (selectedCategoryRadio) {
+                selectedCategoryRadio.checked = true; // 라디오 버튼을 선택 상태로 설정
+                // 해당 카테고리에 맞는 서브카테고리 표시
+                showSubCategories(selectedCategory);
+            }
+        });
+    </script>
+    <script>
+        // JavaScript 코드
+        document.addEventListener("DOMContentLoaded", function () {
+            // 라디오 버튼 요소들을 가져옴
+            const categoryRadios = document.querySelectorAll('.category');
+
+            // 라디오 버튼에 대한 이벤트 리스너 추가
+            categoryRadios.forEach(function (radio) {
+                radio.addEventListener('click', function () {
+                    // 선택된 라디오 버튼의 값에 따라 세부카테고리 내용 변경
+                    const subCategoryElement = document.querySelector('.sub-category');
+                    if (radio.value === 'skin') {
+                        subCategoryElement.innerHTML = `
       <div style="width: 120%;">
         <input type='radio' name='subCategory' value='skin' >스킨</input>
         <input type='radio' name='subCategory' value='cleansing' style="margin-left: 1%;">로션/에멀젼</input>
@@ -566,8 +556,8 @@
         <input type='radio' name='subCategory' value='mask' style="margin-left: 1%;">세트</input>
       </div>
     `;
-                                                                                            } else if (radio.value === 'cleanging') {
-                                                                                                subCategoryElement.innerHTML = `
+                    } else if (radio.value === 'cleanging') {
+                        subCategoryElement.innerHTML = `
       <div style="width: 120%;">
         <input type='radio' name='subCategory' value='skin' >클렌징폼</input>
         <input type='radio' name='subCategory' value='cleansing' style="margin-left: 1%;">클렌징크림/로션/워터</input>
@@ -575,8 +565,8 @@
         <input type='radio' name='subCategory' value='mask' style="margin-left: 1%;">립,아이 리무버</input>
       </div>
     `;
-                                                                                            } else if (radio.value === 'mask') {
-                                                                                                subCategoryElement.innerHTML = `
+                    } else if (radio.value === 'mask') {
+                        subCategoryElement.innerHTML = `
       <div style="width: 120%;">
         <input type='radio' name='subCategory' value='mask' >팩/마스크</input>
         <input type='radio' name='subCategory' value='mask' style="margin-left: 1%;">마사지/워시오프 팩</input>
@@ -585,11 +575,11 @@
         <input type='radio' name='subCategory' value='mask' style="margin-left: 1%;">코팩</input>
       </div>
     `;
-                                                                                            }
-                                                                                        });
-                                                                                    });
-                                                                                });
-                                                                            </script>
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
