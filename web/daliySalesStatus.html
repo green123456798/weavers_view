@@ -420,16 +420,6 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-5 align-self-center">
-                        <div class="customize-input float-right">
-                            <select
-                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
-                                <option selected>Aug 19</option>
-                                <option value="1">July 19</option>
-                                <option value="2">Jun 19</option>
-                            </select>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- ============================================================== -->
@@ -444,21 +434,40 @@
                 <!-- ============================================================== -->
                 <!-- basic table -->
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Line Chart</h4>
+                                <ul class="list-inline text-right">
+                                    <li class="list-inline-item">
+                                        <h5><i class="fa fa-circle mr-1 text-info"></i>어제</h5>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <h5><i class="fa fa-circle mr-1 text-cyan"></i>오늘</h5>
+                                    </li>
+                                </ul>
                                 <div id="morris-line-chart"></div>
                             </div>
                         </div>
                     </div>
                     <!-- column -->
-                    <!-- column -->
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Donute Chart</h4>
-                                <div id="morris-donut-chart"></div>
+                                <h4 class="card-title">Donut Charts</h4>
+                                <div class="row">
+                                    <!-- Donut Chart 1 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div id="morris-donut-chart"></div>
+                                        <p class="text-center">어제</p>
+                                    </div>
+                
+                                    <!-- Donut Chart 2 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div id="morris-donut-chart2"></div>
+                                        <p class="text-center">오늘</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
