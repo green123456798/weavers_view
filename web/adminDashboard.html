@@ -10,7 +10,7 @@
     <meta name="author" content="" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png" />
-    <title>상품목록현황</title>
+    <title>메인페이지</title>
     <!-- This page plugin CSS -->
     <link href="assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
     <!-- Custom CSS -->
@@ -143,13 +143,13 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="adminDashboard.html"
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                     class="hide-menu">메인</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="adminMemberStatus .html"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
                                     class="hide-menu">회원관리
                                 </span></a>
@@ -159,18 +159,18 @@
                                     class="hide-menu">상품관리
                                 </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="adminProductRegistration.html"
-                                        class="sidebar-link"><span class="hide-menu"> 상품등록
+                                <li class="sidebar-item"><a href="adminProductStatus.html" class="sidebar-link">
+                                        <span class="hide-menu"> 상품현황
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="adminProductStatus.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            상품현황
+                                <li class="sidebar-item"><a href="adminProductRegistration.html" class="sidebar-link">
+                                        <span class="hide-menu"> 상품등록
                                         </span></a>
                                 </li>
+
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="adminOrderStatus.html"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">주문관리</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
@@ -178,13 +178,22 @@
                                     class="hide-menu">매출관리
                                 </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="salesStatus.html" class="sidebar-link"><span
+                                            class="hide-menu"> 매출현황
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="daliySalesStatus.html" class="sidebar-link"><span
                                             class="hide-menu"> 일별매출
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="monthlySalesStatus.html" class="sidebar-link"><span
                                             class="hide-menu">
-                                            일월매출
+                                            월별매출
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="annualSalesStatus.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            연간매출
                                         </span></a>
                                 </li>
                             </ul>
@@ -469,7 +478,8 @@
     <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="dist/js/pages/dashboards/dashboard1.min.js"></script>
     <!-- Chart JS -->
-    <script src="dist/js/pages/chartjs/chartjs.init.js"></script>
+    <!-- <script src="dist/js/pages/chartjs/chartjs.init.js"></script> -->
+    <script src="dist/js/pages/chartjs/chartjs.init copy.js"></script>
     <script src="assets/libs/chart.js/dist/Chart.min.js"></script>
     <!--Morris JavaScript -->
     <script src="assets/libs/raphael/raphael.min.js"></script>
