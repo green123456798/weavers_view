@@ -568,13 +568,14 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr style="color: #000000;">
-                                                        <td>1</td>
-                                                        <td>John Doe</td>
-                                                        <td>ddddddddddddddd</td>
-                                                        <td class="productName">${datas[0]}외
+                                                    <!-- tr이 반복됨-그 tr에 id=${productpd} -->
+                                                    <tr style="color: #000000;" class="productName" id=${serialPK}>
+                                                        <td>${주문번호:값받아오기}</td>
+                                                        <td>${주문날짜:값받아오기}</td>
+                                                        <td>값받아오기</td>
+                                                        <td>${datas[0]}외
                                                             ${fn:length(data)-1}개</td>
-                                                        <td>1</td>
+                                                        <td>값받아오기</td>
                                                         <td>
                                                             <select class="custom-select mr-sm-2"
                                                                 id="inlineFormCustomSelect" style="color: #000000;">
@@ -582,7 +583,7 @@
                                                                 <option value="2">완료</option>
                                                             </select>
                                                         </td>
-                                                        <td>1</td>
+                                                        <td>값받아오기</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -603,28 +604,71 @@
                                                 // 상품명이 클릭되었을 때 모달을 표시하는 함수
                                                 document.querySelectorAll('.productName').forEach(function (productName) {
                                                     productName.addEventListener('click', function () {
+                                                        var serialPK = $(this).prop('id');
                                                         var modal = document.getElementById("myModal");
                                                         var productNameModal = document.getElementById("productNameModal");
                                                         // 표 생성
-                                                        var tableHTML = `
+                                                        $.ajax({
+                                                            type: "POST",
+                                                            url: "/getOrderList",
+                                                            data: {
+                                                                'serialPK': serialPK
+                                                            },
+                                                            dataType: 'json',
+                                                            success: function (data) {
+                                                                var tableHTML = `
                                                         <table id="products" border="1" style="width: 100%;">
     <tr style="color: #000000;">
         <th style="width: 30%;">주문날짜</th>
-        <td style="width: 70%;">2024-02-14</td>
+        <td style="width: 70%;">${data.getIndex[0].serialRegdate}</td>
     </tr>
     <tr>
         <th style="width: 30%;">주문자</th>
-        <td>John Doe</td>
+        <td>${data.getIndex[0]}</td>주문자 이름이 필요해요
     </tr>
-    <tr>
-        <th style="width: 30%;">상품명</th>
-        <td>나중에 el 태그 넣기</td>
-    </tr>
+    `;
+
+                                                                $.each(data, function (index, data) {
+                                                                    tableHTML += `<tr>
+                                                                        <th style="width: 30%;">상품명</th>
+                                                                        <td>
+                                                                            ${data.serialRegdate}</td>
+                                                                    </tr>`
+
+                                                                });
+
+                                                                tableHTML += `
     <tr>
         <th style="width: 30%;">총결제금액</th>
-        <td>10000원</td>
+        <td>${data.getIndex[0].totalprice}</td>
     </tr>
 </table>`;
+                                                            },
+                                                            error: function (error) {
+                                                                console.log('에러의 종류:' + error)
+                                                            }
+
+
+                                                        })
+                                                        /* var tableHTML = `
+                                                        <table id="products" border="1" style="width: 100%;">
+        <tr style="color: #000000;">
+        <th style="width: 30%;">주문날짜</th>
+        <td style="width: 70%;">${주문날짜값받아오기}</td>
+        </tr>
+        <tr>
+        <th style="width: 30%;">주문자</th>
+        <td>John Doe</td>
+        </tr>
+        <tr>
+        <th style="width: 30%;">상품명</th>
+        <td>나중에 el 태그 넣기</td>
+        </tr>
+        <tr>
+        <th style="width: 30%;">총결제금액</th>
+        <td>10000원</td>
+        </tr>
+        </table>`; */
                                                         // 모달에 표 삽입
                                                         productNameModal.innerHTML = tableHTML;
                                                         modal.style.display = "block"; // 모달 표시
