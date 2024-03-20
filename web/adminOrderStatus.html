@@ -28,6 +28,17 @@
             align-items: center;
             gap: 10px;
         }
+
+        #myModal {
+            position: fixed;
+            /* 고정 위치 설정 */
+            top: 50%;
+            /* 화면 상단에서 절반 위치에 배치 */
+            left: 50%;
+            /* 화면 왼쪽에서 절반 위치에 배치 */
+            transform: translate(-50%, -50%);
+            /* 절반씩 이동해서 가운데로 정렬 */
+        }
     </style>
 
 
@@ -92,25 +103,18 @@
             padding: 8px;
             text-align: left;
             overflow-x: auto;
-            /* 가로 오버플로우 스크롤 생성 */
-            /* max-width: 200px; */
-            /* 테이블 셀 내부의 최대 너비 설정 */
-            /* overflow: hidden; */
             white-space: nowrap;
 
         }
 
         th {
             background-color: #f2f2f2;
-            /* 테이블 헤더의 배경색 설정 */
         }
 
         @media screen and (max-width: 768px) {
 
-            /* 화면 너비가 768px 이하일 때 스타일 적용 */
             table {
                 font-size: 14px;
-                /* 작은 화면에서 글꼴 크기 조정 */
             }
         }
     </style>
@@ -118,28 +122,20 @@
     <style>
         ::-webkit-scrollbar {
             width: 5px;
-            /* 스크롤 바의 가로 너비 */
         }
 
-        /* Firefox 브라우저에 적용되는 스크롤 바 스타일 */
-        /* Firefox에서는 스크롤 바의 가로 너비만 제어할 수 있습니다. */
-        /* 세로 스크롤 바는 브라우저의 기본 스타일이 적용됩니다. */
         * {
             scrollbar-width: thin;
         }
 
-        /* IE 및 Edge 브라우저(이전 버전)에 적용되는 스크롤 바 스타일 */
-        /* Microsoft Edge(Chromium)에서는 사용되지 않습니다. */
         *::-ms-scrollbar {
             width: 5px;
-            /* 스크롤 바의 가로 너비 */
         }
     </style>
 
     <style>
         ::placeholder {
             color: #000000;
-            /* Placeholder 색상 변경 */
             font-weight: 100;
         }
     </style>
@@ -220,7 +216,6 @@
         /* 모달 스타일 */
         .modal {
             display: none;
-            /* 초기에는 모달을 표시하지 않음 */
             position: fixed;
             z-index: 1;
             left: 0;
@@ -228,8 +223,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            /* 스크롤이 필요한 경우에만 스크롤 표시 */
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(157, 157, 157, 0.5);
             /* 배경색을 반투명하게 설정 */
         }
 
@@ -237,11 +231,10 @@
         .modal-content {
             background-color: #fefefe;
             margin: 15% auto;
-            /* 화면 중앙에 위치 */
             padding: 5%;
             border: 1px solid #888;
-            width: 80%;
-            margin-left: 15%;
+            width: 60%;
+            margin-left: 20%;
             /* 왼쪽 여백을 추가하여 오른쪽으로 이동 */
             box-shadow: 0 4px 8px 0 rgb(146, 145, 145), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             animation-name: animatetop;
@@ -284,7 +277,6 @@
             top: 0;
             right: 0;
             padding: 10px;
-            /* 필요에 따라 패딩 설정 */
         }
 
         .productName:hover {
@@ -606,24 +598,24 @@
                                                         var productNameModal = document.getElementById("productNameModal");
                                                         // 표 생성
                                                         var tableHTML = `
-            <table id="products" border="1">
-                <thead>
-                    <tr style="color: #000000;">
-                        <th>주문날짜</th>
-                        <th>주문자</th>
-                        <th>상품명</th>
-                        <th>총결제금액</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024-02-14</td>
-                        <td>John Doe</td>
-                        <td>나중에 el 태그 넣기</td> 
-                        <td>10000원</td>
-                    </tr>
-                </tbody>
-            </table>`;
+                                                        <table id="products" border="1" style="width: 100%;">
+    <tr style="color: #000000;">
+        <th style="width: 30%;">주문날짜</th>
+        <td style="width: 70%;">2024-02-14</td>
+    </tr>
+    <tr>
+        <th style="width: 30%;">주문자</th>
+        <td>John Doe</td>
+    </tr>
+    <tr>
+        <th style="width: 30%;">상품명</th>
+        <td>나중에 el 태그 넣기</td>
+    </tr>
+    <tr>
+        <th style="width: 30%;">총결제금액</th>
+        <td>10000원</td>
+    </tr>
+</table>`;
                                                         // 모달에 표 삽입
                                                         productNameModal.innerHTML = tableHTML;
                                                         modal.style.display = "block"; // 모달 표시
