@@ -339,13 +339,13 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="adminDashboard.html"
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                     class="hide-menu">메인</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="adminMemberStatus .html"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
                                     class="hide-menu">회원관리
                                 </span></a>
@@ -355,18 +355,18 @@
                                     class="hide-menu">상품관리
                                 </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="adminProductRegistration.html"
-                                        class="sidebar-link"><span class="hide-menu"> 상품등록
+                                <li class="sidebar-item"><a href="adminProductStatus.html" class="sidebar-link">
+                                        <span class="hide-menu"> 상품현황
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="adminProductStatus.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            상품현황
+                                <li class="sidebar-item"><a href="adminProductRegistration.html" class="sidebar-link">
+                                        <span class="hide-menu"> 상품등록
                                         </span></a>
                                 </li>
+
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="adminOrderStatus.html"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">주문관리</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
@@ -374,17 +374,26 @@
                                     class="hide-menu">매출관리
                                 </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="salesStatus.html" class="sidebar-link"><span
+                                            class="hide-menu"> 매출현황
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="daliySalesStatus.html" class="sidebar-link"><span
                                             class="hide-menu"> 일별매출
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="monthlySalesStatus.html" class="sidebar-link"><span
                                             class="hide-menu">
-                                            일월매출
+                                            월별매출
                                         </span></a>
                                 </li>
-                            </ul <li class="list-divider">
-                        </li>
+                                <li class="sidebar-item"><a href="annualSalesStatus.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            연간매출
+                                        </span></a>
+                                </li>
+                            </ul>
+                        <li class="list-divider"></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
                                     class="hide-menu">로그아웃</span></a></li>
@@ -407,7 +416,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">월별 매출 현황</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">연간 매출 현황</h4>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
@@ -415,16 +424,6 @@
                                     <li class="breadcrumb-item text-muted active" aria-current="page">Library</li>
                                 </ol>
                             </nav>
-                        </div>
-                    </div>
-                    <div class="col-5 align-self-center">
-                        <div class="customize-input float-right">
-                            <select
-                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
-                                <option selected>Aug 19</option>
-                                <option value="1">July 19</option>
-                                <option value="2">Jun 19</option>
-                            </select>
                         </div>
                     </div>
                 </div>
@@ -442,21 +441,42 @@
                 <!-- basic table -->
                 <div class="row">
                     <!-- column -->
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Bar Chart</h4>
+                                <ul class="list-inline text-right">
+                                    <li class="list-inline-item">
+                                        <h5><i class="fa fa-circle mr-1 text-info"></i>작년</h5>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <h5><i class="fa fa-circle mr-1 text-cyan"></i>올해</h5>
+                                    </li>
+                                </ul>
                                 <div id="morris-bar-chart"></div>
                             </div>
                         </div>
                     </div>
                     <!-- column -->
                     <!-- column -->
-                    <div class="col-lg-6">
+                    <!-- column -->
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Donute Chart</h4>
-                                <div id="morris-donut-chart"></div>
+                                <h4 class="card-title">Donut Charts</h4>
+                                <div class="row">
+                                    <!-- Donut Chart 1 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div id="morris-donut-chart"></div>
+                                        <p class="text-center">작년</p>
+                                    </div>
+                
+                                    <!-- Donut Chart 2 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div id="morris-donut-chart2"></div>
+                                        <p class="text-center">올해</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
